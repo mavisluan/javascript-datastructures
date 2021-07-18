@@ -32,11 +32,12 @@
  *          dict[char2] --
  *       return true
  */
+// Time: O(N) Space: O(N)
 const validAnagram = (str1, str2) => {  // "somehow", "sometow"
     if (str1.length !== str2.length) return false;
     if (!str1.length && !str2.length) return true;
 
-    const dict = {};  // {s: 0, o:1, m: 0, e: 0, h: 1, w: 1}
+    const dict = {};  // {s: 0, o:1, m: 0, e: 0, h: 1, w: 1} // space: O(N)
     for (let char of str1) {
         dict[char] = dict[char] + 1 || 1;
     }

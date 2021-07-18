@@ -27,7 +27,7 @@
  *       if dict1[k1] !== dict2[squared] return false
  *    return true
  */
-
+// Time: O(N) Space: O(N)
  const same = (nums1, nums2) => { // [1, 2, 2, 4]   [1, 4, 16, 16]
     if (nums1.length !== nums2.length) return false;
 
