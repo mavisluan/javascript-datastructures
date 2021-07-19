@@ -54,6 +54,13 @@ const isSubsequence = (str1, str2) => { // 'abc', 'acb'
 
     return pointer1 === str1.length;
 }
+// Recursive Solution but not O(1) Space
+function isSubsequence2(str1, str2) {
+    if(str1.length === 0) return true
+    if(str2.length === 0) return false
+    if(str2[0] === str1[0]) return isSubsequence(str1.slice(1), str2.slice(1))
+    return isSubsequence(str1, str2.slice(1))
+}
 
 console.log("should return false", isSubsequence('abc', 'acb'));
 console.log("should return true", isSubsequence('sing', 'sting'))
