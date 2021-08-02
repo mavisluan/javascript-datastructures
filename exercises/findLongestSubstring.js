@@ -6,6 +6,9 @@
  * findLongestSubstring('') // 0
  * findLongestSubstring('rithmschool') // 7
  * findLongestSubstring('thisisawesome') // 6
+ * findLongestSubstring('bbbbbbbbb') // 1
+ * findLongestSubstring('thecatinthehat') // 7
+ * Time: O(N)
  */
 
 /**          0   1  2   3   4   5   6   7   8   9   10  11  12
